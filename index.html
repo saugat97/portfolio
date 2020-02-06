@@ -1,278 +1,245 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Saugat </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saugat Thapa</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
-
-<!-- sidenavbar -->
-<!-- <script>
-		function openNav() {
-		  document.getElementById("mySidenav").style.width = "250px";
-		  document.getElementById("main").style.marginLeft = "250px";
-		}
-		
-		function closeNav() {
-		  document.getElementById("mySidenav").style.width = "0";
-		  document.getElementById("main").style.marginLeft= "0";
-		}
-		</script> -->
-
-<!-- sticky navbar -->
-	
 <body>
-	<!-- <div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Clients</a>
-			<a href="#">Contact</a>
-	</div> -->
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Saugat Thapa</h1>
+            <h6>Computer Science Major | Software Developer</h6>
+        </div>
+    </header>
 
-	<div class="parallax">
-		<div class="main">
-			<!-- <h2>Sidenav Push Example</h2>
-			<p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
-		<ul>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#work">Work</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#home">Home</a></li>
-		</ul>
-		<!-- nav end -->
-		<div class="main-img">
-			<image src="img/saugat.jpg"
-				style="height: 300px; width: auto; border-radius: 100%; border: 2px solid white; top:300px;">
-		</div>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img">
+                <img src="images/profile.jpeg" alt="">
+            </div>
+            <div class="about-details">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Me</h6>                    
+                </div>
+                <p>
+                    lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                    cnsajcasjcnnj nkcndksanc n cjad ncjcnac cnaskcnkasncka acsn sknckasnckanckanckasnckanskn ,
+                    cnaklsnckanckanckasnckascnaskcnnkk kacnksanckas kasnmckasnckas ksanckanckas kmncaksnckas knckasnkasnc kncaksnckasn,
+                    cnaskcnkasn mckasnckas ckasnckasnc acsknckak kanck kanckas k ask  knakc knkekn  ,sn ckank k sak   sak  aksa sak aks ka ssak aksa snaksask aks
+                </p>
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<div align="center">
-			<p class="title">Hi, I am Saugat Thapa.</p>
-			<p class="sub-title">Software Developer</p>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Services</h1>
+                <h6>What can i help you with</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h1>Web Design</h1>
+                    <p>
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        cnsajcasjcnnj nkcndksanc n cjad ncjcnac cnaskcnkasncka acsn sknckasnckanckanckasnckanskn ,
+                        cnaklsnckanckanckasnckascnaskcnnkk kacnksanckas kasnmckasnckas ksanckanckas kmncaksnckas knckasnkasnc kncaksnckasn
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Web Development</h1>
+                    <p>
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        cnsajcasjcnnj nkcndksanc n cjad ncjcnac cnaskcnkasncka acsn sknckasnckanckanckasnckanskn ,
+                        cnaklsnckanckanckasnckascnaskcnnkk kacnksanckas kasnmckasnckas ksanckanckas kmncaksnckas knckasnkasnc kncaksnckasn
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h1>Product Strategy</h1>
+                    <p>
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        cnsajcasjcnnj nkcndksanc n cjad ncjcnac cnaskcnkasncka acsn sknckasnckanckanckasnckanskn ,
+                        cnaklsnckanckanckasnckascnaskcnnkk kacnksanckas kasnmckasnckas ksanckanckas kmncaksnckas knckasnkasnc kncaksnckasn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<div class="icons">
-				<a href="https://www.linkedin.com/in/saugatthapa/" <i class="fab fa-linkedin"
-					style="color: white"></i></a>
-				<a href="https://github.com/saugat97"><i class="fab fa-github-square" style="color: white"></i></a>
-				<a href="https://www.facebook.com/saugat.thapa.16"><i class="fab fa-facebook-square"
-						style="color: white"></i></a>
-				<a href="mailto:saugat.thapa97@gmail.com"><i class="fas fa-envelope" style="color: white"></i></a>
-			</div>
-		</div>
-	</div>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>View some of my recent work</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right">
+                    <img src="images/portitem1.jpeg" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Web Development</h6>
+                    <h1>Blog website</h1>
+                    <p>
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                    </p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right">
+                    <h6>Web Design</h6>
+                    <h1>Product Layout</h1>
+                    <p>
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                    </p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+                <div class="portfolio-img has-margin-right">
+                    <img src="images/portitem2.jpeg" alt="">
+                </div>     
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="images/portitem3.jpeg" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Web Design</h6>
+                    <h1>Product Sketch</h1>
+                    <p>
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                    </p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div class="parallax2">
-		<div class="work" id="work">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-7">
-						<img src="https://insuranceasianews.com/wp-content/uploads/2019/03/DXC-440x270.jpg"
-							style="height: 250px; padding: 10px">
-						<p class="project-title">Web Application Developer Intern</p>
-						<p class="project-subtitle">DXC Technology</p>
-						<p class="description">Developed an application for the employees of Nola DTC. Experienced project
-							phases using agile methodologies with daily standups and weekly sprints. Won an award for best
-							scrum team among the interns around the states.
-					</div>
-	
-					<div class="col-md-5">
-						<img src="https://www.southeastern.edu/admin/uc/images/uc_flag.jpg"
-							style="height: 250px;  padding: 10px">
-						<p class="project-title">System Analyst Intern</p>
-						<p class="project-subtitle">Southeastern Louisiana University</p>
-						<p class="description">Creating Workday Reports. Migrating datas from PeopleSoft to WorkDay
-							Enterprise System. Writing SQL queries. Analyzing and designing techniques to solve business
-							problems. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Work Experience</h1>
+                <h6>Past and current Jobs</h6>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="date" data-date="2011 - Present">
+                        <h1>Google</h1>
+                        <p>
+                            lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                            lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        </p>
+                    </li>
+                    <li class="date" data-date="2008 - 2011">
+                        <h1>Facebook</h1>
+                        <p>
+                            lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                            lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        </p>
+                    </li>
+                    <li class="date" data-date="2002 - 2008">
+                        <h1>Microsoft</h1>
+                        <p>
+                            lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                            lorem ipsum dolor sit amet anbbhcs bvycasvyvcasbacs bcascv ybcas.
+                        </p>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </section>
 
-	<!-- portfolio -->
-	<div class="portfolio" id="portfolio">
-		<p style="font-size: 40px; text-align: center;">Portfolio</p>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<p class="project-title"><b>Lion Up</b></p>
-					<p class="project-subtitle">Capstone I: CMPS 411 Project </p>
-					<p class="description"> Developed a web application with events, news feeds, networking using
-						React-Redux-Firebase. Used semantic UI and various React, Redux packages such as
-						redux-firestore, thunk etc. </p>
-				</div>
-				<div class="col-md-6">
-					<p class="project-title"><b>RESTful Web services</b></p>
-					<p class="project-subtitle">Introduction to Enterprise system: CMPS 415 Project</p>
-					<p class="description">Developed a Real-World Ready Project using Node.js Webservice (Express.js,
-						MongoDB database). Implemented CRUD operations and deployed the application through Heroku
-				</div>
-			</div>
-			<br />
-			<div class="row">
-				<div class="col-md-6">
-					<p class="project-title"><b>Lion's Feed</b></p>
-					<p class="project-subtitle">Software Engineering: CMPS 285 Project</p>
-					<p class="description">Social networking web app for students with features including like, comment,
-						share, flag etc. Developed in ASP.NET Core 2.0 Entity Framework using Microsoft Visual Studio.
-						Implemented CRUD functionality with web API controllers.
-				</div>
+    <section class="Contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>My info</h6>
+            </div>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required></input>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required></input>
+                
+                <label for="subject">Message:</label>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
 
-				<div class="col-md-6">
-					<p class="project-title"><b>iForgot</b></p>
-					<p class="project-subtitle">Survey of Programming Language CMPS 401 Project </p>
-					<p class="description">Developed an application using .NET MVC 5, Used Entity framework to connect
-						with the database. Practiced web api functionalities. </p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy; 2020 Saugat Thapa</p>
+    </footer>
 
-	<!-- Skills -->
-	<div class="skills" id="skills">
-		<p style="font-size: 40px; text-align: center;">Skills</p>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-						<div class="flip-card">
-								<div class="flip-card-inner">
-								  <div class="flip-card-front">
-									<img src="./img/CSharp.png" alt="Avatar" style="width:300px;height:300px;">
-								  </div>
-								  <div class="flip-card-back">
-									<b>
-									<p>• ASP.NET Core</p>
-									<p>• Entity Framework Core</p>
-									<p>• ASP.NET MVC 5</p>
-									<p>• .NET Framework</p>								
-									<p>• Entity Framework 6</p>
-									<p>• Web API</p>
-									</b>
-								  </div>
-								</div>
-						</div>
-				</div>
-				<div class="col-md-4">
-						<div class="flip-card">
-								<div class="flip-card-inner">
-								  <div class="flip-card-front">
-									<img src="./img/javascript.png" alt="Avatar" style="width:300px;height:300px;">
-								  </div>
-								  <div class="flip-card-back"> 
-										<b>
-											<p>• React.js</p>
-											<p>• Node.js</p>								
-											<p>• Express.js</p>
-											<p>• Redux for state management</p>
-											<p>• Microsoft's Ajax library</p>
-											<p>• jQuery UI</p>
-										</b>
-								  </div>
-								</div>
-						</div>
-				</div>
-				<div class="col-md-4">
-						<div class="flip-card">
-								<div class="flip-card-inner">
-								  <div class="flip-card-front">
-									<img src="./img/SQL.png" alt="Avatar" style="width:300px;height:300px;">
-								  </div>
-								  <div class="flip-card-back">
-									  <b>
-										<p>• Microsoft SQL Server</p>
-										<p>• SQL database in Microsoft azure</p>
-										<p>• MySQL</p>
-										<p>• Oracle Database</p> 
-										<p>• Toad Oracle database management toolset</p>
-									  </b>
-									</div>
-								</div>
-						</div>
-				</div>
-				<!-- <div class="col-md-6">
-						<div class="boxed">
-								<p class="skills">Proficient in: Java, C#, SQL, C++, HTML, CSS, JavaScript, React, Node.js, MongoDB </p>
-						</div>
-				</div> -->
-			</div>
-			<br/>
-			<div class="row">
-					<div class="col-md-4">
-							<div class="flip-card">
-									<div class="flip-card-inner">
-									  <div class="flip-card-front">
-										<img src="./img/tag.png" alt="Avatar" style="width:300px;height:300px;">
-									  </div>
-									  <div class="flip-card-back"> 
-										<b>
-											<P>• HTML5 </P>
-											<P>• CSS </P>
-											<P>• CSS Grid </P>
-											<P>• Bootstrap </P>
-											<P>• Material UI </P>
-											<P>• Semantic UI </P>
-										</b>
-									  </div>
-									</div>
-							</div>
-					</div>
-					<div class="col-md-4">
-							<div class="flip-card">
-									<div class="flip-card-inner">
-									  <div class="flip-card-front">
-										<img src="./img/firebase.png" alt="Avatar" style="width:300px;height:300px;">
-									  </div>
-									  <div class="flip-card-back"> 
-										<b>
-											<p>• Firebase realtime database </p>
-											<p>• Firebase authentication</p>
-											<p>• Firestore</p>
-											<p>• React-Redux-Firebase package</p>
-											<P>• Firebase Hosting</P>
-										</b>
-									  </div>
-									</div>
-							</div>
-					</div>
-					<div class="col-md-4">
-							<div class="flip-card">
-									<div class="flip-card-inner">
-									  <div class="flip-card-front">
-										<img src="./img/other.jpg" alt="Avatar" style="width:300px;height:300px;">
-									  </div>
-									  <div class="flip-card-back">
-										<b>
-											<p>• JAVA, C++ </p>
-											<P>• Agile and Scrum practices </P>
-											<P>• Test driven development </P>
-											<P>• Software design pattern </P>
-											<p>• Object Oriented Programming</p>
-											<p>• Algorithm development and Implementation</p>
-											
-										</b>
-									  </div>
-									</div>
-							</div>
-					</div>
-					<!-- <div class="col-md-6">
-							<div class="boxed">
-									<p class="skills">Proficient in: Java, C#, SQL, C++, HTML, CSS, JavaScript, React, Node.js, MongoDB </p>
-							</div>
-					</div> -->
-				</div>	
-				
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="footer-text">© Saugat Thapa | All Rights Reserved</div>
-	</div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>
