@@ -128,7 +128,7 @@ li{
 }
 
 .nav-link{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -280,7 +280,7 @@ li{
 
 /*End about*/
 
-/*Start services*/
+/*Start skills*/
 .my-skills{
    margin-top: 10rem;
    display: grid;
@@ -320,7 +320,7 @@ li{
     transform: rotate(-45deg);
 }
 
-/*End services*/ 
+/*End skills*/ 
 
 /*Start portfolio*/
 .portfolio-item{
@@ -369,7 +369,7 @@ li{
     color: #2f67cd;
 }
 
-/*End services*/
+/*End portfolio*/
 
 /*Start timeline*/
 .timeline ul{
@@ -621,6 +621,7 @@ input[type="submit"]:hover{
 
     .profile-img{
         margin: 0 0 7rem 0;
+        max-width: 350px;
     }
 
     .portfolio-item{
