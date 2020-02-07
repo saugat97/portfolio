@@ -20,6 +20,7 @@ body{
 
 section{
     padding: 6rem 0;
+    overflow-x: hidden;
 }
 
 a{
@@ -135,7 +136,7 @@ li{
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #fbf595, #7dbcf6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -436,7 +437,7 @@ li{
 /*End timeline*/
 
 /*Start contact*/
-
+/* 
 .contact{
     background-color: #221e3f;
 }
@@ -474,7 +475,7 @@ input[type="submit"]:hover{
     color: #221e3f;
     background-color: #fbf595;
 }
-
+ */
 
 /*End contact*/
 
@@ -613,9 +614,10 @@ input[type="submit"]:hover{
 
     .nav-link{
         font-size: 3.5rem;
-        margin-right: 4rem;
+        margin-right: 3.5rem;
+        
     }
-
+    
     .about .container{
         flex-direction: column;
     }
@@ -648,9 +650,9 @@ input[type="submit"]:hover{
         font-size: 1.4rem;
     }
 
-    form{
+    /* form{
         width: 100%;
-    }
+    } */
 
     .up{
         right: 2rem;
