@@ -17,7 +17,11 @@ body{
     background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
-
+.about{
+    width: 50%; 
+    float:right; 
+    margin: 30px 10px; 
+}
 section{
     padding: 6rem 0;
     overflow-x: hidden;
@@ -125,12 +129,35 @@ header{
     align-items: center;
 }
 
+.nav-list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list2{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 li{
     margin: 0 2rem;
 }
 
+li2{
+    margin: 0 2rem;
+}
+
+
 .nav-link{
-    font-family: 'Permanent Marker', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -206,8 +233,8 @@ li{
 }
 
 .landing-text h1{
-    font-size: 12rem;
-    font-family: 'Permanent Marker', sans-serif;
+    font-size: 10rem;
+    font-family: 'Exo 2', sans-serif;
     background: linear-gradient(to top, #fbf595, #7dbcf6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -221,7 +248,6 @@ li{
 /*End header*/
 
 /*Start about*/
-
 .about .container{
     display: flex;
     align-items: center;
@@ -233,6 +259,7 @@ li{
     text-transform: uppercase;
     line-height: 0;
     margin-bottom: 6rem;
+    margin-top: 2rem;
 }
 
 .about-heading h1{
@@ -247,13 +274,13 @@ li{
 }
 
 .profile-img{
-    flex: 1;
+    
     margin-right: 5rem;
 }
 
-.about-details{
+/* .about-details{
     flex: 1;
-}
+} */
 
 .social-media{
     margin-top: 5rem;
@@ -538,13 +565,16 @@ input[type="submit"]:hover{
     }
 
     .landing-text h1{
-        font-size: 12rem;
+        font-size: 5rem;
     }
     
     .landing-text h6{
         font-size: 1.7rem;
     }
-
+    .about{
+        width: 90%; 
+        margin: 5px;
+    }
     .nav-list{
         flex-direction: column;
     }
@@ -565,8 +595,18 @@ input[type="submit"]:hover{
         font-size: 3rem;
     }
 
+
+    .profile-img{
+        margin: 0 5rem 5rem 0;
+        padding-right: 10px;
+        max-width: 350px;
+    }
+
     .about-details .nav-list{
         flex-direction: initial;
+    }
+    .about-details{
+        padding: 10px;
     }
 
     .about-details li{
@@ -602,14 +642,30 @@ input[type="submit"]:hover{
     p{
         opacity: 0.9;
     }
+    .about{
+        width: 90%; 
+        margin: 5px;
+    }
+
+    .landing-text h1{
+        font-size: 6rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-list2{
+        margin: inherit;
+    }
+
+    li2{
+        margin: 0 1rem;
+    }
 
     .menu-toggler{
         top: 2rem;
         right: 2rem;
-    }
-
-    .landing-text h1{
-        font-size: 8rem;
     }
 
     .landing-text h6{
@@ -627,7 +683,8 @@ input[type="submit"]:hover{
     }
 
     .profile-img{
-        margin: 0 0 7rem 0;
+        margin: 0 5rem 5rem 0;
+        padding-right: 10px;
         max-width: 350px;
     }
 
