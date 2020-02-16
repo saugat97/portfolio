@@ -17,6 +17,7 @@ body{
     background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
+
 .about{
     width: 50%; 
     float:right; 
@@ -155,7 +156,6 @@ li2{
     margin: 0 2rem;
 }
 
-
 .nav-link{
     font-family: 'Exo 2', sans-serif;
     font-size: 5rem;
@@ -186,6 +186,8 @@ li2{
     cursor: pointer;
     z-index: 1500;
     transition: transform 650ms ease-out;
+        position: fixed;
+        overflow: hidden;
 }
 
 .menu-toggler.open{
@@ -244,6 +246,11 @@ li2{
 .landing-text h6{
     font-size: 2rem;
     font-weight: 300;
+}
+
+button{
+    background: transparent;
+    padding: .3rem;
 }
 /*End header*/
 
@@ -557,20 +564,26 @@ input[type="submit"]:hover{
     }
 }
 /*End animations*/
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1204px) {
     body{
         background: url("images/sitebg.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
+    /* a{
+        background: linear-gradient(to top, #fbf595, #7dbcf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } */
+
     .landing-text h1{
-        font-size: 5rem;
+        font-size: 10rem;
     }
     
     .landing-text h6{
-        font-size: 1.7rem;
+        font-size: 3rem;
     }
+
     .about{
         width: 90%; 
         margin: 5px;
@@ -595,11 +608,107 @@ input[type="submit"]:hover{
         font-size: 3rem;
     }
 
+    
+    .menu-toggler{
+        position: fixed;
+        overflow: hidden;
+    }
 
     .profile-img{
-        margin: 0 5rem 5rem 0;
-        padding-right: 10px;
+        margin: 0 5rem 5rem 25rem;
+        max-width: 500px;
+        align-items: center;
+    }
+
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+    .about-details{
+        padding: 10px;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .icon-container{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .icon-container i{
+        font-size: 4rem;
+    }
+
+    .timeline ul{
+        margin: 0 0 0 auto;
+    }
+    
+    .timeline .date::before{
+        left: -20rem;
+    }
+
+    .timeline .date::after{
+        left: -5.9rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background: url("images/sitebg.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    /* a{
+        background: linear-gradient(to top, #fbf595, #7dbcf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } */
+
+    .landing-text h1{
+        font-size: 8rem;
+    }
+    
+    .landing-text h6{
+        font-size: 2rem;
+    }
+
+    .about{
+        width: 90%; 
+        margin: 5px;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    
+    li{
+        margin: 2rem 0;
+    }
+
+    .nav-link{
+        font-size: 4.5rem;
+    }
+
+    .about-heading h1{
+        font-size: 8rem;
+    }
+
+    .section-heading h1{
+        font-size: 3rem;
+    }
+
+    
+   
+    .menu-toggler{
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .profile-img{
+        margin: 0 5rem 5rem 20rem;
         max-width: 350px;
+        align-items: center;
     }
 
     .about-details .nav-list{
@@ -642,6 +751,13 @@ input[type="submit"]:hover{
     p{
         opacity: 0.9;
     }
+
+    /* a{
+        background: linear-gradient(to top, #fbf595, #7dbcf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } */
+
     .about{
         width: 90%; 
         margin: 5px;
@@ -653,11 +769,13 @@ input[type="submit"]:hover{
 
     .nav-list{
         flex-direction: column;
+        margin-left: 2rem
     }
 
     .nav-list2{
         margin: inherit;
     }
+
 
     li2{
         margin: 0 1rem;
@@ -666,6 +784,8 @@ input[type="submit"]:hover{
     .menu-toggler{
         top: 2rem;
         right: 2rem;
+        position: fixed;
+        overflow: hidden;
     }
 
     .landing-text h6{
@@ -675,7 +795,6 @@ input[type="submit"]:hover{
     .nav-link{
         font-size: 3.5rem;
         margin-right: 3.5rem;
-        
     }
     
     .about .container{
