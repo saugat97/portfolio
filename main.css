@@ -165,7 +165,7 @@ li2 {
 
 .nav-link {
   font-family: "Exo 2", sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   padding: 1rem;
 }
 
@@ -184,7 +184,7 @@ li2 {
 .menu-toggler {
   position: absolute;
   top: 5rem;
-  right: 5rem;
+  right: 3rem;
   width: 5rem;
   height: 5rem;
   display: flex;
@@ -296,7 +296,7 @@ button {
 }
 
 .profile-img {
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 
 /* .about-details{
