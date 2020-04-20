@@ -584,8 +584,7 @@ input[type="submit"]:hover{
 /*End animations*/
 @media screen and (max-width: 1204px) {
   body {
-    background: url("images/sitebg.jpg") no-repeat center fixed;
-    background-size: cover;
+
     width: 100%;
     height: 100%;
   }
@@ -678,8 +677,6 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 768px) {
   body {
-    background: url("images/sitebg.jpg") no-repeat center fixed;
-    background-size: cover;
     width: 100%;
     height: 100%;
   }
