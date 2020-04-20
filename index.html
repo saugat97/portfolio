@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Saugat Thapa</title>
+    <script type="text/javascript" src="js/particles.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -18,6 +19,119 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
+  <style>
+    .cv:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.1);
+      color: skyblue;
+      cursor: pointer;
+      transition: transform 350ms ease-out;
+      text-decoration: underline;
+    }
+    #myImg,
+    #myImg2 {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg:hover {
+      opacity: 0.7;
+    }
+
+    #myImg2:hover {
+      opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+    .modal,
+    .modal2 {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content,
+    #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+      from {
+        -webkit-transform: scale(0);
+      }
+      to {
+        -webkit-transform: scale(1);
+      }
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 70px;
+      right: 480px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+      .modal-content {
+        width: 100%;
+      }
+    }
+  </style>
   <body>
     <header>
       <div class="menu-toggler">
@@ -42,15 +156,35 @@
           <li>
             <a href="#experience" class="nav-link">Experience</a>
           </li>
+          <li>
+            <a href="#certificates" class="nav-link">Certifications</a>
+          </li>
           <!-- <li>
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>                 -->
         </ul>
       </nav>
+      <canvas class="background"></canvas>
       <div class="landing-text">
-        <h1>Saugat Thapa</h1>
-        <h6>Software Developer</h6>
-                    <!--  <h6><a>Software Developer | 
+        <p style="font-size: 35px; font-family: Roboto;">Hi, I am</p>
+        <h1 style="font-family: Roboto; margin: 0; padding: 0;" class="name">
+          Saugat Thapa
+        </h1>
+        <h6 style="font-size: 24px; font-style: Roboto;" class="subtitle">
+          A Software Developer looking for opportunities.
+        </h6>
+        <a
+          href="https://drive.google.com/file/d/1K9WTagiXtArLv6E6zcsoRoqzCrss5M3S/view?usp=sharing"
+          target="_blank"
+        >
+          <p
+            style="font-size: 24px; font-style: Roboto; padding-top: 20px;"
+            class="cv"
+          >
+            DOWNLOAD CV
+          </p></a
+        >
+        <!--  <h6><a>Software Developer | 
                             <button type="button">
                                 <a class="cv" href="https://drive.google.com/file/d/1Th90XjkGW3RsWEGIB1peZz9tzAGOTE0R/view?usp=sharing" target="_blank">Curriculum vitae</a>
                             </button>
@@ -74,10 +208,9 @@
             <h6>Me</h6>
           </div>
           <p>
-            Hi, I am <b>Saugat Thapa</b>, a senior student at Southeastern
-            Louisiana University, graduating in <b>May 2020</b>. I am a
-            Computer Science Major and Minor in Mathematics.
-            <br /><br />
+            Hi, I am Saugat Thapa, a senior student at Southeastern Louisiana
+            University, graduating in May 2020. I am a Computer Science Major
+            and Minor in Mathematics. <br /><br />
             I love to code and I enjoy solving complex logical problems.<b></b>
 
             When I am not coding, you will find me either playing FIFA or
@@ -235,8 +368,14 @@
               >
             </p>
           </div>
-          <div class="portfolio-img">
-            <img src="images/aaa.png" alt="asp.net core" />
+          <div class="portfolio-linkimg">
+            <a
+              href="https://e-commerce-ltd.herokuapp.com/"
+              class="cta"
+              target="_blank"
+            >
+              <img src="images/test.png" alt="asp.net core" />
+            </a>
           </div>
         </div>
         <div class="portfolio-item">
@@ -245,7 +384,7 @@
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            <img src="images/portitem1.jpeg" alt="react-redux" />
+            <img src="images/lionup.png" alt="react-redux" />
           </div>
           <div
             class="portfolio-description"
@@ -293,7 +432,7 @@
             >
           </div>
           <div class="portfolio-img">
-            <img src="images/portitem2.jpeg" alt="asp.net core" />
+            <img src="images/lionsfeed.png" alt="asp.net core" />
           </div>
         </div>
         <div class="portfolio-item">
@@ -302,7 +441,7 @@
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            <img src="images/portitem3.jpeg" alt="RESTful api" />
+            <img src="images/restapi.png" alt="RESTful api" />
           </div>
           <div
             class="portfolio-description"
@@ -390,6 +529,54 @@
       </div>
     </section>
 
+    <section class="award">
+      <div class="container">
+        <div class="section-heading" id="certificates">
+          <h1>Awards and Certifications</h1>
+        </div>
+
+        <div class="portfolio-item">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+          </div>
+
+          <div
+            class="portfolio-img"
+            data-aos="fade-right"
+            data-aos-delay="250"
+            style="padding: 15px;"
+          >
+            <img
+              id="myImg"
+              src="images/ibm.jpg"
+              alt="img"
+              style="max-width: 650px; height: auto;"
+            />
+          </div>
+
+          <div id="myModal2" class="modal2">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02" />
+          </div>
+
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-left"
+            data-aos-delay="350"
+            style="padding: 15px;"
+          >
+            <img
+              id="myImg2"
+              src="images/certificate.jpg"
+              alt="img"
+              style="max-width: 650px; height: auto;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- <section class="Contact" id="contact">
         <div class="container">
             <div class="section-heading">
@@ -409,11 +596,10 @@
         </div>
     </section> -->
 
-    <footer class="copyright">
+    <footer class="copyright" style="margin-bottom: 5px;">
       <div class="up" id="up">
         <i class="fas fa-chevron-up"></i>
       </div>
-      <p>&copy; 2020 Saugat Thapa</p>
       <div class="social-media">
         <ul class="nav-list2">
           <li2>
@@ -439,10 +625,56 @@
           </li2>
         </ul>
       </div>
+      <p style="margin-top: 50px;">&copy; 2020 Saugat Thapa</p>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="main.js"></script>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    var particles = Particles.init({
+      selector: ".background",
+      color: ["skyblue", "#e4e4e4"],
+      responsive: [
+        {
+          breakpoint: 800,
+          options: {
+            color: "#00C9B1",
+            maxParticles: 80,
+          },
+        },
+      ],
+    });
+
+    var modal = document.getElementById("myModal");
+    var modal2 = document.getElementById("myModal2");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var img2 = document.getElementById("myImg2");
+
+    var modalImg = document.getElementById("img01");
+    var modalImg2 = document.getElementById("img02");
+
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    };
+    img2.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    };
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+  </script>
 </html>
