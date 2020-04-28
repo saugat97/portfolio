@@ -25,7 +25,7 @@ body {
 section {
   padding: 6rem 0;
   overflow-x: hidden;
-  background-color:  #03101d;
+  background-color: #03101d;
 }
 
 a {
@@ -112,7 +112,8 @@ img {
   text-decoration: underline;
 }
 #myImg,
-#myImg2 {
+#myImg2,
+#myImg3 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -126,9 +127,14 @@ img {
   opacity: 0.7;
 }
 
+#myImg3:hover {
+  opacity: 0.7;
+}
+
 /* The Modal (background) */
 .modal,
-.modal2 {
+.modal2,
+.modal3 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -215,7 +221,6 @@ img {
 }
 
 /*End For modal*/
-
 
 /*Start header*/
 header {
@@ -404,11 +409,11 @@ button {
 }
 
 .about p {
-   opacity: 0.5 ;
+  opacity: 0.5;
 }
 
 .about b {
-   font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .profile-img {
@@ -508,15 +513,12 @@ button {
   flex: 1;
 }
 
-
 .portfolio-linkimg:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.1);
-  cursor: pointer; 
+  cursor: pointer;
 }
-
-
 
 .portfolio-description h1 {
   font-size: 3rem;
@@ -700,12 +702,12 @@ input[type="submit"]:hover{
 /*End animations*/
 @media screen and (max-width: 1204px) {
   body {
-
     width: 100%;
     height: 100%;
   }
 
-  #myModal, #myModal2 {
+  #myModal,
+  #myModal2 {
     visibility: hidden;
     display: none;
   }
@@ -797,7 +799,8 @@ input[type="submit"]:hover{
     height: 100%;
   }
 
-  #myModal, #myModal2 {
+  #myModal,
+  #myModal2 {
     visibility: hidden;
     display: none;
   }
@@ -891,7 +894,8 @@ input[type="submit"]:hover{
     opacity: 0.9;
   }
 
-  #myModal, #myModal2 {
+  #myModal,
+  #myModal2 {
     visibility: hidden;
     display: none;
   }
