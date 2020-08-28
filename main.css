@@ -592,9 +592,9 @@ button {
 
 .timeline .date::before {
   content: attr(data-date);
-  left: -21rem;
+  left: -24rem;
   text-align: right;
-  min-width: 12rem;
+  min-width: 15rem;
   font-size: 1.5rem;
 }
 
@@ -785,7 +785,7 @@ input[type="submit"]:hover{
   }
 
   .timeline .date::before {
-    left: -20rem;
+    left: -22rem;
   }
 
   .timeline .date::after {
@@ -880,6 +880,7 @@ input[type="submit"]:hover{
 
   .timeline .date::before {
     left: -20rem;
+    min-width: 13rem;
   }
 
   .timeline .date::after {
@@ -980,7 +981,7 @@ input[type="submit"]:hover{
 
   .timeline .date::before {
     font-size: 1.4rem;
-    left: -18.5rem;
+    left: -19.5rem;
   }
 
   .timeline h1 {
